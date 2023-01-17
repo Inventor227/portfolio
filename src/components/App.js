@@ -11,8 +11,8 @@ import Achievements from "./achievements";
 import Projects from "./Projects"
 import SocialHandles from "./SocialHandles"
 import React from "react";
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from "./Home"
+import { BrowserRouter, Link,Routes,Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
@@ -46,46 +46,16 @@ and customer need
       </Card.Body>
     </Card>
       </Container>
-          <Routes>
-<Navbar bg="light">
-        <Container>
-          <Route path="/education" element={<Education /> } >Education</Route>
-          {/* <Education /> */}
-        </Container>
-      </Navbar>
-      <br />
-      <Navbar bg="light">
-        <Container>
-          <Route  path="/achievements" element={<Achievements />} > Achievements</Route>
-          {/* < Achievements /> */}
-        </Container>
-      </Navbar>
-      <br />
-      <Navbar bg="light">
-        <Container>
-          <Route  path="/Projects" element={<Projects />}>
-           {/* Projects */}
-          </Route>
-          {/* <Projects /> */}
-        </Container>
-      </Navbar>
-      <br />
-      <Navbar bg="light">
-        <Container>
-          <Route  path="/SocialHandles" element={<SocialHandles />}>
-            {/* <img
-              alt=""
-              // src="/logo.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            /> */}
-            Social platforms
-          </Route>
-          {/* <SocialHandles /> */}
-        </Container>
-      </Navbar>    
-</Routes>   
+       <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/achievements" element={<Achievements />} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/SocialHandles" element={<SocialHandles />} />
+      </Routes>
+    </BrowserRouter>
+       
     </div>
 
 

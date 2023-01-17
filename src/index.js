@@ -3,7 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Education from './components/education'
+{/* <BrowserRouter>
+      <Routes>
+        <Route path="/components/education" element={<Education />} />
+      </Routes>
+    </BrowserRouter>   */}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
