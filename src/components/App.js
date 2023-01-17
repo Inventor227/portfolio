@@ -86,7 +86,6 @@ and customer need
         </Container>
       </Navbar>    
 </Routes>   
-t 
     </div>
 
 
