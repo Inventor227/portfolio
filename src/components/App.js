@@ -10,6 +10,9 @@ import Education from "./education";
 import Achievements from "./achievements";
 import Projects from "./Projects"
 import SocialHandles from "./SocialHandles"
+import React from "react";
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
@@ -37,38 +40,39 @@ communication skills and a knack for problem
 solving. Seeking entry level Software
 Engineering roles with organizations engaged in
 uisng technology to solve complex problems
-and customer needs
+and customer need
         </Card.Text>
     
       </Card.Body>
     </Card>
       </Container>
+          <Routes>
 <Navbar bg="light">
         <Container>
-          <Navbar.Brand  >Education</Navbar.Brand>
-          <Education />
+          <Route path="/education" element={<Education /> } >Education</Route>
+          {/* <Education /> */}
         </Container>
       </Navbar>
       <br />
       <Navbar bg="light">
         <Container>
-          <Navbar.Brand > Achievements</Navbar.Brand>
-          < Achievements />
+          <Route  path="/achievements" element={<Achievements />} > Achievements</Route>
+          {/* < Achievements /> */}
         </Container>
       </Navbar>
       <br />
       <Navbar bg="light">
         <Container>
-          <Navbar.Brand href="#home">
-           Projects
-          </Navbar.Brand>
-          <Projects />
+          <Route  path="/Projects" element={<Projects />}>
+           {/* Projects */}
+          </Route>
+          {/* <Projects /> */}
         </Container>
       </Navbar>
       <br />
       <Navbar bg="light">
         <Container>
-          <Navbar.Brand href="#home">
+          <Route  path="/SocialHandles" element={<SocialHandles />}>
             {/* <img
               alt=""
               // src="/logo.svg"
@@ -77,11 +81,12 @@ and customer needs
               className="d-inline-block align-top"
             /> */}
             Social platforms
-          </Navbar.Brand>
-          <SocialHandles />
+          </Route>
+          {/* <SocialHandles /> */}
         </Container>
-      </Navbar>
-   
+      </Navbar>    
+</Routes>   
+
     </div>
 
 
