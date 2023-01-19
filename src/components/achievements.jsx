@@ -5,7 +5,7 @@ function achievements ()
     return (
         <div>
            <Achievementshelp 
-         content="Cleared Amazon summer internship Coding Round 202"     
+         content="Cleared Amazon summer internship Coding Round 2023"    
       /> 
       <Achievementshelp 
          content="Daily streak of 87 days and solved 337 questions on

@@ -12,10 +12,12 @@ import Projects from "./Projects"
 import SocialHandles from "./SocialHandles"
 import React from "react";
 import Home from "./Home"
+import RouterHelp from "./Routerhelp"
 import { BrowserRouter, Link,Routes,Route } from "react-router-dom";
+const isBackgroundRed = true;
 function App() {
   return (
-    <div className="App">
+    <div  className="App" >
       <header className="App-header">
       </header>
       <Container className="text-center">
@@ -27,6 +29,7 @@ function App() {
             roundedCircle={true}
             width="200" height="200" align="center" 
           />
+<h1>  Mohammad Ibrahim </h1>
           </Col>
         </Row>
         <Card classaName="mt-auto p-2" style={{ width: '18rem' }}>
@@ -46,15 +49,7 @@ and customer need
       </Card.Body>
     </Card>
       </Container>
-       <BrowserRouter>
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/achievements" element={<Achievements />} />
-        <Route path="/Projects" element={<Projects />} />
-        <Route path="/SocialHandles" element={<SocialHandles />} />
-      </Routes>
-    </BrowserRouter>
+     <RouterHelp />
        
     </div>
 
