@@ -8,7 +8,7 @@ function achievements ()
          content="Cleared Amazon summer internship Coding Round 2023"    
       /> 
       <Achievementshelp 
-         content="Daily streak of 87 days and solved 337 questions on
+         content="Daily streak of 87 days and solved 480 questions on
 leetcode .
 https://leetcode.com/mohdibrahim12123/"     
       />
@@ -16,9 +16,8 @@ https://leetcode.com/mohdibrahim12123/"
          content="Ranked 4 star on Hackerrank in Problem solving
 https://www.hackerrank.com/mohdibrahim12123"     
       />
-      <Achievementshelp 
-         content="Fully solved 83 problems on codechef. Div3 at codechef
-https://www.codechef.com/users/ibrahim_12123"     
+         <Achievementshelp 
+         content="Solved Fully 54 problems on codeforces. https://codeforces.com/profile/inventor12"     
       />
 
         </div>

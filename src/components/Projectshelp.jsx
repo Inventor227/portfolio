@@ -13,4 +13,4 @@ function educationhelp (props)
             </div>
     )
 }
-export default educationhelp
+export default educationhelp 

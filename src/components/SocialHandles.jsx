@@ -13,14 +13,12 @@ function SocialHandles ()
       <Handles
          content="https://www.hackerrank.com/mohdibrahim12123"     
       />
-      <Handles
-         content="https://www.codechef.com/users/ibrahim_12123"     
+       <Handles
+         content="https://leetcode.com/mohdibrahim12123/"     
       />
       <Handles content="https://codeforces.com/profile/inventor12" />
-      
-
         </div>
-        
-    )
+      
+    ) 
 }
 export default SocialHandles;

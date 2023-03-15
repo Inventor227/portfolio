@@ -24,6 +24,7 @@ function App() {
         <Row className="justify-content-md-center">
           <Col>
             <Image
+      
             src=
               "https://media.licdn.com/dms/image/C4E03AQHrIZT_0UdYXg/profile-displayphoto-shrink_400_400/0/1631440704592?e=1679529600&v=beta&t=IwoAQRXCKBuw_6j9PMTdZvYdAyMBOxOYaipVeO52I9Y"
             roundedCircle={true}

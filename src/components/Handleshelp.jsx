@@ -6,6 +6,7 @@ function educationhelp (props)
         <div>
       <h4>{props.content}</h4>
             </div>
+            
     )
 }
 export default educationhelp
